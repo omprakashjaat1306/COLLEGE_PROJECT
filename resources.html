@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudGuide - Resources</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-brand">&#9729; CloudGuide</a>
+        <div class="nav-right">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resources.html" class="active">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search pages..." aria-label="Search">
+                <button id="searchBtn">Go</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="resources-hero">
+        <h1>Stuff to Learn From</h1>
+        <p>Curated resources, real examples, and a roadmap that actually works — all from someone who's been in your shoes</p>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">You Already Use the Cloud. Every Day.</h2>
+            <p class="section-subtitle">Here are some examples you've probably experienced yourself</p>
+            <div class="resources-grid">
+                <div class="resource-card fade-in">
+                    <div class="resource-icon">&#127909;</div>
+                    <h3>Netflix</h3>
+                    <p>Netflix runs almost entirely on AWS. When you hit play, that video streams from cloud servers — not your laptop. AWS handles storage, encoding, and delivery for millions of users at once.</p>
+                    <div class="resource-tags"><span>AWS</span><span>Streaming</span><span>CDN</span></div>
+                </div>
+                <div class="resource-card fade-in">
+                    <div class="resource-icon">&#127925;</div>
+                    <h3>Spotify</h3>
+                    <p>Spotify uses Google Cloud to store and stream 100M+ songs. The cloud runs those personalized playlists (Discover Weekly) and makes sure the song doesn't buffer mid-chorus.</p>
+                    <div class="resource-tags"><span>GCP</span><span>Music</span><span>Big Data</span></div>
+                </div>
+                <div class="resource-card fade-in">
+                    <div class="resource-icon">&#128247;</div>
+                    <h3>Google Photos</h3>
+                    <p>Every photo you backup goes to Google Cloud servers. That "free up space" button? It deletes local copies. Your photos stay safe in the cloud with Google's AI organizing them.</p>
+                    <div class="resource-tags"><span>GCP</span><span>Storage</span><span>AI</span></div>
+                </div>
+                <div class="resource-card fade-in">
+                    <div class="resource-icon">&#128233;</div>
+                    <h3>Gmail / Outlook</h3>
+                    <p>Ever noticed you can log into your email from any device? That's because your emails don't live on your phone — they live in the cloud (Gmail on GCP, Outlook on Azure).</p>
+                    <div class="resource-tags"><span>AWS</span><span>Azure</span><span>GCP</span></div>
+                </div>
+                <div class="resource-card fade-in">
+                    <div class="resource-icon">&#128179;</div>
+                    <h3>Amazon</h3>
+                    <p>Amazon runs its entire store on AWS. Every search, payment, and "Customers also bought" is cloud-powered. During Prime Day, it scales automatically to handle the traffic surge.</p>
+                    <div class="resource-tags"><span>AWS</span><span>E-Commerce</span><span>Scaling</span></div>
+                </div>
+                <div class="resource-card fade-in">
+                    <div class="resource-icon">&#127970;</div>
+                    <h3>Airbnb</h3>
+                    <p>Airbnb uses AWS to handle millions of bookings. The cloud lets them scale up during holiday travel season and scale down when things are quiet — paying only for what they use.</p>
+                    <div class="resource-tags"><span>AWS</span><span>Travel</span><span>Serverless</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-cool">
+        <div class="container">
+            <h2 class="section-title">The Big Three Cloud Platforms</h2>
+            <p class="section-subtitle">Pick one. Don't try to learn all three at once. I'd recommend starting with AWS if you're not sure.</p>
+            <div class="platform-grid">
+                <div class="platform-card fade-in aws">
+                    <div class="platform-logo" style="background:#FF9900;">AWS</div>
+                    <h3>Amazon Web Services</h3>
+                    <p>Market leader with 200+ services. Best for beginners — the free tier is generous and there's a tutorial for everything.</p>
+                    <ul>
+                        <li><strong>Free Tier:</strong> 12 months + always free stuff</li>
+                        <li><strong>Best For:</strong> Everyone, honestly. Especially beginners.</li>
+                        <li><strong>Key Services:</strong> EC2, S3, Lambda, RDS</li>
+                        <li><strong>Certification:</strong> AWS Cloud Practitioner (CLF-C02)</li>
+                    </ul>
+                    <div class="platform-links">
+                        <a href="https://aws.amazon.com/free" target="_blank">Free Tier &#8599;</a>
+                        <a href="https://aws.amazon.com/training" target="_blank">Learn AWS &#8599;</a>
+                    </div>
+                </div>
+                <div class="platform-card fade-in azure">
+                    <div class="platform-logo" style="background:#0078D4;">Azure</div>
+                    <h3>Microsoft Azure</h3>
+                    <p>Great if your college or company already uses Microsoft stuff. Integrates well with Office 365 and Active Directory.</p>
+                    <ul>
+                        <li><strong>Free Tier:</strong> 12 months + $200 credit for 30 days</li>
+                        <li><strong>Best For:</strong> .NET devs, enterprise folks, hybrid cloud</li>
+                        <li><strong>Key Services:</strong> VMs, Azure Functions, SQL Database</li>
+                        <li><strong>Certification:</strong> AZ-900 Azure Fundamentals</li>
+                    </ul>
+                    <div class="platform-links">
+                        <a href="https://azure.microsoft.com/free" target="_blank">Free Tier &#8599;</a>
+                        <a href="https://learn.microsoft.com/training/azure" target="_blank">Learn Azure &#8599;</a>
+                    </div>
+                </div>
+                <div class="platform-card fade-in gcp">
+                    <div class="platform-logo" style="background:#4285F4;">GCP</div>
+                    <h3>Google Cloud Platform</h3>
+                    <p>Best if you're into data stuff, machine learning, or containers. Google basically invented Kubernetes.</p>
+                    <ul>
+                        <li><strong>Free Tier:</strong> $300 credit for 90 days + always free</li>
+                        <li><strong>Best For:</strong> Data science, ML, containers, startups</li>
+                        <li><strong>Key Services:</strong> BigQuery, Cloud Run, GKE, Compute Engine</li>
+                        <li><strong>Certification:</strong> Google Cloud Digital Leader</li>
+                    </ul>
+                    <div class="platform-links">
+                        <a href="https://cloud.google.com/free" target="_blank">Free Tier &#8599;</a>
+                        <a href="https://cloud.google.com/training" target="_blank">Learn GCP &#8599;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Step-by-Step Learning Path</h2>
+            <p class="section-subtitle">This is exactly what I did. It worked for me, it'll probably work for you too.</p>
+            <div class="learning-steps">
+                <div class="lstep fade-in">
+                    <div class="lstep-num">1</div>
+                    <div class="lstep-content">
+                        <h3>Understand Basic Internet Stuff</h3>
+                        <p>You don't need to be a networking expert, but know what IP addresses, DNS, and servers are. Watch a 20-minute YouTube video and you're good.</p>
+                        <div class="resource-tags"><span>YouTube</span><span>Khan Academy</span><span>Free</span></div>
+                    </div>
+                </div>
+                <div class="lstep fade-in">
+                    <div class="lstep-num">2</div>
+                    <div class="lstep-content">
+                        <h3>Pick One Platform (Just One!)</h3>
+                        <p>AWS, Azure, or GCP. Pick one and stick with it. I picked AWS because it has the most free content. Don't try to learn all three at once — I made that mistake, it doesn't work.</p>
+                        <div class="resource-tags"><span>AWS</span><span>Azure</span><span>GCP</span></div>
+                    </div>
+                </div>
+                <div class="lstep fade-in">
+                    <div class="lstep-num">3</div>
+                    <div class="lstep-content">
+                        <h3>Free YouTube Courses Are Your Friend</h3>
+                        <p>Don't pay for courses yet. freeCodeCamp, AWS Official, and a hundred other channels have amazing free content. Search "AWS beginners full course" and start watching.</p>
+                        <div class="resource-tags"><span>freeCodeCamp</span><span>YouTube</span><span>Free</span></div>
+                    </div>
+                </div>
+                <div class="lstep fade-in">
+                    <div class="lstep-num">4</div>
+                    <div class="lstep-content">
+                        <h3>Sign Up for Free Tier (It's Actually Free)</h3>
+                        <p>AWS gives you 12 months free. Azure gives $200 credit. GCP gives $300. Sign up, explore the dashboard, launch a virtual machine. Break things — it's free to experiment.</p>
+                        <div class="resource-tags"><span>AWS Free</span><span>Azure Free</span><span>GCP Free</span></div>
+                    </div>
+                </div>
+                <div class="lstep fade-in">
+                    <div class="lstep-num">5</div>
+                    <div class="lstep-content">
+                        <h3>Build Something Tiny</h3>
+                        <p>Host a "Hello World" website on S3. Deploy a simple app on EC2. Set up a database and connect it to something. You'll learn more from one real project than 10 hours of videos.</p>
+                        <div class="resource-tags"><span>EC2</span><span>S3</span><span>VMs</span></div>
+                    </div>
+                </div>
+                <div class="lstep fade-in">
+                    <div class="lstep-num">6</div>
+                    <div class="lstep-content">
+                        <h3>Get Certified (It's Easier Than You Think)</h3>
+                        <p>Beginner certs (AWS Cloud Practitioner, AZ-900, GCP Digital Leader) are doable in 2-4 weeks. They look great on resumes and actually teach you the fundamentals properly.</p>
+                        <div class="resource-tags"><span>AWS CP</span><span>AZ-900</span><span>GCP CDL</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-cool">
+        <div class="container">
+            <h2 class="section-title">Free Learning Resources</h2>
+            <p class="section-subtitle">All the good stuff that won't cost you a thing</p>
+            <div class="resources-table-wrapper">
+                <table class="resources-table">
+                    <thead>
+                        <tr>
+                            <th>Resource</th>
+                            <th>Type</th>
+                            <th>Platform</th>
+                            <th>Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>AWS Cloud Practitioner Essentials</td><td>Official Course</td><td>AWS</td><td>Free</td></tr>
+                        <tr><td>Azure Fundamentals (AZ-900)</td><td>Official Course</td><td>Azure</td><td>Free</td></tr>
+                        <tr><td>Google Cloud Digital Leader</td><td>Official Course</td><td>GCP</td><td>Free</td></tr>
+                        <tr><td>freeCodeCamp Cloud Computing Course</td><td>Video Course</td><td>AWS</td><td>Free</td></tr>
+                        <tr><td>Simplilearn Cloud Computing</td><td>Video Course</td><td>All</td><td>Free</td></tr>
+                        <tr><td>AWS Free Tier Practice Labs</td><td>Hands-On</td><td>AWS</td><td>Free</td></tr>
+                        <tr><td>Microsoft Learn Modules</td><td>Interactive</td><td>Azure</td><td>Free</td></tr>
+                        <tr><td>Google Cloud Skills Boost</td><td>Labs & Quests</td><td>GCP</td><td>Free (limited)</td></tr>
+                        <tr><td>Coursera Cloud Computing (Audit)</td><td>Course</td><td>All</td><td>Free (audit)</td></tr>
+                        <tr><td>EdX Cloud Computing Basics (Audit)</td><td>Course</td><td>All</td><td>Free (audit)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>&#9729; CloudGuide</h4>
+                <p>A college student's attempt to make cloud computing make sense. Built with curiosity and a lot of late-night Googling.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>&#128205; SKIT Jaipur</p>
+                <p>&#128231; b250552@skit.ac.in</p>
+                <p>&#128222; 9079116553</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop">&#8593;</button>
+
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-results" id="searchResults">
+            <h3>Search Results <button class="close-search" id="closeSearch">&times;</button></h3>
+            <p class="no-results">Type something to search</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

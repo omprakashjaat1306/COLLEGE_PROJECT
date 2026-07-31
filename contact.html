@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudGuide - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-brand">&#9729; CloudGuide</a>
+        <div class="nav-right">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search pages..." aria-label="Search">
+                <button id="searchBtn">Go</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="contact-hero">
+        <h1>Want to Talk?</h1>
+        <p>Got a question, feedback, or just want to say hi? We actually reply — no chatbots here.</p>
+    </section>
+
+    <section class="section bg-light">
+        <div class="contact-wrapper">
+            <div class="contact-info fade-in">
+                <h3>How to Reach Us</h3>
+                <div class="contact-info-item">
+                    <div class="icon">&#128205;</div>
+                    <div>
+                        <h4>Where We Are</h4>
+                        <p>SKIT Jaipur, Rajasthan<br>You know, the building with the big gate.</p>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="icon">&#128231;</div>
+                    <div>
+                        <h4>Email Us</h4>
+                        <p>b250552@skit.ac.in<br>We check this daily. Usually.</p>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="icon">&#128222;</div>
+                    <div>
+                        <h4>Call or WhatsApp</h4>
+                        <p>9079116553<br>Text is better — we're probably in class.</p>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="icon">&#128339;</div>
+                    <div>
+                        <h4>When We're Around</h4>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 2:00 PM<br>Sunday: Probably sleeping.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-box fade-in">
+                <h3>Drop a Message</h3>
+                <form id="contactForm" novalidate>
+                    <div class="form-group" id="nameGroup">
+                        <label for="formName">Your Name *</label>
+                        <input type="text" id="formName" placeholder="What should we call you?" required>
+                        <div class="error-text" id="nameError">Name must be at least 2 characters</div>
+                    </div>
+
+                    <div class="form-group" id="emailGroup">
+                        <label for="formEmail">Email *</label>
+                        <input type="email" id="formEmail" placeholder="So we can reply to you" required>
+                        <div class="error-text" id="emailError">Please enter a valid email</div>
+                    </div>
+
+                    <div class="form-group" id="phoneGroup">
+                        <label for="formPhone">Phone Number</label>
+                        <input type="tel" id="formPhone" placeholder="Optional — 10 digit mobile number">
+                        <div class="error-text" id="phoneError">Please enter a valid 10-digit Indian mobile number</div>
+                    </div>
+
+                    <div class="form-group" id="serviceGroup">
+                        <label for="formService">What's This About? *</label>
+                        <select id="formService" required>
+                            <option value="">Pick one...</option>
+                            <option value="iaas">IaaS - Infrastructure as a Service</option>
+                            <option value="paas">PaaS - Platform as a Service</option>
+                            <option value="saas">SaaS - Software as a Service</option>
+                            <option value="general">General Inquiry</option>
+                        </select>
+                        <div class="error-text" id="serviceError">Please select a topic</div>
+                    </div>
+
+                    <div class="form-group" id="msgGroup">
+                        <label for="formMessage">Your Message *</label>
+                        <textarea id="formMessage" placeholder="Tell us what's on your mind... feedback, questions, or just saying hi" required></textarea>
+                        <div class="error-text" id="msgError">Message must be at least 10 characters</div>
+                    </div>
+
+                    <div style="margin-top:0.5rem;color:#7f8c8d;font-size:0.8rem;">* Required fields</div>
+
+                    <button type="submit" class="btn" style="width:100%;margin-top:1rem;">Send Message &#8594;</button>
+                </form>
+
+                <div class="form-success" id="formSuccess">
+                    <div class="icon">&#9989;</div>
+                    <h3>Got It! We'll Get Back to You</h3>
+                    <p>Thanks for reaching out. We usually reply within 24 hours. Sometimes sooner, sometimes during exam season... please be patient.</p>
+                    <button class="btn" style="margin-top:1rem;" onclick="location.reload()">Send Another Message</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>&#9729; CloudGuide</h4>
+                <p>A college student's attempt to make cloud computing make sense. Built with curiosity and a lot of late-night Googling.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>&#128205; SKIT Jaipur</p>
+                <p>&#128231; b250552@skit.ac.in</p>
+                <p>&#128222; 9079116553</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop">&#8593;</button>
+
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-results" id="searchResults">
+            <h3>Search Results <button class="close-search" id="closeSearch">&times;</button></h3>
+            <p class="no-results">Type something to search</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

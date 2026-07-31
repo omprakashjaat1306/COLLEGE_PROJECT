@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudGuide - About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-brand">&#9729; CloudGuide</a>
+        <div class="nav-right">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+            </ul>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search pages..." aria-label="Search">
+                <button id="searchBtn">Go</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="about-hero">
+        <h1>So, What's This All About?</h1>
+        <p>A college project that turned into something bigger — making cloud computing less scary for everyone</p>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container about-content">
+            <h2>Why I Made This</h2>
+            <p>Honestly? I was confused. Every article about cloud computing used words like "scalability," "virtualization," and "elasticity" like everyone just knew what those meant. I didn't. So I decided to build something that explains it the way I wish someone had explained it to me — in plain language, with real examples, and without the corporate nonsense.</p>
+            <p>CloudGuide started as a semester project at SKIT Jaipur. I had to pick a topic, make a website, and present it. But the more I dug into cloud computing, the more I realized how many people are in the same boat — they use the cloud every day (Netflix, Google Drive, Spotify) but have no idea how any of it works. So I kept building.</p>
+
+            <h2>What You'll Find Here</h2>
+            <ul>
+                <li>Real-talk explanations of cloud concepts (no jargon, I promise)</li>
+                <li>A breakdown of IaaS, PaaS, and SaaS with actual examples</li>
+                <li>Where to start learning AWS, Azure, or GCP without burning money</li>
+                <li>Everyday examples of cloud computing you've probably used today</li>
+                <li>Resources and certification paths that actually make sense for beginners</li>
+            </ul>
+
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>&#9729; CloudGuide</h4>
+                <p>A college student's attempt to make cloud computing make sense. Built with curiosity and a lot of late-night Googling.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>&#128205; SKIT Jaipur</p>
+                <p>&#128231; b250552@skit.ac.in</p>
+                <p>&#128222; 9079116553</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop">&#8593;</button>
+
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-results" id="searchResults">
+            <h3>Search Results <button class="close-search" id="closeSearch">&times;</button></h3>
+            <p class="no-results">Type something to search</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

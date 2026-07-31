@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudGuide - Home</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-brand">&#9729; CloudGuide</a>
+        <div class="nav-right">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search pages..." aria-label="Search">
+                <button id="searchBtn">Go</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Cloud Computing<br><span>for the Rest of Us</span></h1>
+            <p>Honestly, cloud computing sounded like gibberish to me too at first. But once you strip away all the fancy terms, it's really just using someone else's computer over the internet. This site is my attempt to explain it the way I wish someone had explained it to me.</p>
+            <a href="resources.html" class="btn">Start Here &#8594;</a>
+            <a href="services.html" class="btn btn-outline" style="margin-left:0.5rem;">What We Offer</a>
+        </div>
+        <div class="hero-visual" style="position:relative;width:350px;height:300px;">
+            <div style="position:absolute;font-size:7rem;color:rgba(37,99,235,0.12);top:0;left:20px;animation:bobble 4s ease-in-out infinite;">&#9729;</div>
+            <div style="position:absolute;font-size:6rem;bottom:20px;left:50%;transform:translateX(-50%);animation:bobble 5s ease-in-out infinite;animation-delay:1s;">&#128187;</div>
+            <div style="position:absolute;font-size:3rem;color:#0d9488;top:30%;left:50%;transform:translateX(-50%);animation:arrow 2s ease-in-out infinite;">&#8593;</div>
+            <div style="position:absolute;font-size:4rem;top:60%;right:0;color:rgba(13,148,136,0.12);animation:bobble 4s ease-in-out infinite;animation-delay:2s;">&#9729;</div>
+        </div>
+    </section>
+
+    <section class="section slider-section">
+        <div class="slider-container">
+            <div class="slider-track">
+                <div class="slide">
+                    <img src="https://picsum.photos/seed/cloud1/900/450" alt="Cloud Computing" loading="lazy">
+                    <div class="slide-caption">
+                        <h3>Wait, What Even Is the Cloud?</h3>
+                        <p>It's not a real cloud. It's just a bunch of servers somewhere else. You connect to them, and boom — your stuff is accessible anywhere.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://picsum.photos/seed/cloud2/900/450" alt="Data Centers" loading="lazy">
+                    <div class="slide-caption">
+                        <h3>Massive Warehouses Full of Computers</h3>
+                        <p>Cloud providers run gigantic data centers all over the world. That's where your photos, emails, and Netflix shows actually live.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://picsum.photos/seed/cloud3/900/450" alt="Any Device" loading="lazy">
+                    <div class="slide-caption">
+                        <h3>Your Stuff, Anywhere</h3>
+                        <p>Laptop died? No worries. Log in from a friend's phone, a library computer, or your tablet — it's all still there.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://picsum.photos/seed/cloud4/900/450" alt="Team Collaboration" loading="lazy">
+                    <div class="slide-caption">
+                        <h3>Working Together Without Being Together</h3>
+                        <p>Google Docs, Notion, Trello — all cloud-based. Multiple people can edit the same file at the same time. Kind of magic, honestly.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-btn prev" aria-label="Previous slide">&#8592;</button>
+            <button class="slider-btn next" aria-label="Next slide">&#8594;</button>
+        </div>
+        <div class="slider-dots"></div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">So Why Bother?</h2>
+            <p class="section-subtitle">Here's why cloud computing actually matters in real life (not just in tech articles)</p>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">&#128176;</div>
+                    <h3>Less Expensive Than You Think</h3>
+                    <p>Buying a powerful server costs thousands. Renting one in the cloud costs pennies per hour. Start small, grow later.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">&#127758;</div>
+                    <h3>Works Anywhere With Internet</h3>
+                    <p>Phone, laptop, tablet, smart TV — if it has a browser, you can access your cloud stuff. No more "I left it on my other device."</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">&#128737;</div>
+                    <h3>You Won't Lose Your Data</h3>
+                    <p>Spilled coffee on your laptop? Cloud backups mean your files survive. The cloud provider handles redundancy — not you.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">&#128200;</div>
+                    <h3>Grows As You Grow</h3>
+                    <p>Got 10 users today and 10,000 tomorrow? Cloud scales automatically. No need to buy new hardware every time you get popular.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">&#128101;</div>
+                    <h3>Teamwork Without the Headache</h3>
+                    <p>No more emailing files back and forth. Work on the same doc in real time, see changes instantly, and actually get stuff done.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">&#9889;</div>
+                    <h3>Updates? Handled for You</h3>
+                    <p>No more "update available" pop-ups. The provider keeps everything updated and patched. You just use it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>&#9729; CloudGuide</h4>
+                <p>A college student's attempt to make cloud computing make sense. Built with curiosity and a lot of late-night Googling.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>&#128205; SKIT Jaipur</p>
+                <p>&#128231; b250552@skit.ac.in</p>
+                <p>&#128222; 9079116553</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop">&#8593;</button>
+
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-results" id="searchResults">
+            <h3>Search Results <button class="close-search" id="closeSearch">&times;</button></h3>
+            <p class="no-results">Type something to search</p>
+        </div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudGuide - Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-brand">&#9729; CloudGuide</a>
+        <div class="nav-right">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search pages..." aria-label="Search">
+                <button id="searchBtn">Go</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="services-hero">
+        <h1>Cloud Service Models</h1>
+        <p>Three ways to use the cloud — pick whatever makes sense for what you're trying to build</p>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">How Much Control Do You Want?</h2>
+            <p class="section-subtitle">That's really what it comes down to. More control = more responsibility. Less control = less to manage.</p>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">&#127961;</div>
+                    <h3>IaaS</h3>
+                    <p>Infrastructure as a Service — you get virtual computers, storage, and networking. Basically a computer in the cloud that you control completely.</p>
+                    <ul>
+                        <li>Virtual machines (rent a computer)</li>
+                        <li>Block & object storage (save files)</li>
+                        <li>Virtual networking (connect things)</li>
+                        <li>Load balancers (handle traffic)</li>
+                        <li>Full root access (do whatever you want)</li>
+                    </ul>
+                    <a href="contact.html" class="btn" style="padding:0.6rem 1.5rem;font-size:0.85rem;">Talk to Us</a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">&#128187;</div>
+                    <h3>PaaS</h3>
+                    <p>Platform as a Service — just upload your code and the platform handles the rest. No worrying about servers or operating systems.</p>
+                    <ul>
+                        <li>App hosting (deploy without setup)</li>
+                        <li>Database management (they handle backups)</li>
+                        <li>CI/CD pipelines (auto-deploy)</li>
+                        <li>Auto-scaling (handles traffic spikes)</li>
+                        <li>Built-in security (one less thing to worry about)</li>
+                    </ul>
+                    <a href="contact.html" class="btn" style="padding:0.6rem 1.5rem;font-size:0.85rem;">Talk to Us</a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">&#127918;</div>
+                    <h3>SaaS</h3>
+                    <p>Software as a Service — just use the app. No setup, no maintenance, no IT team needed. Open a browser and you're done.</p>
+                    <ul>
+                        <li>Email & collaboration (Gmail, Office 365)</li>
+                        <li>CRM & analytics (Salesforce, Google Analytics)</li>
+                        <li>File storage & sharing (Google Drive, Dropbox)</li>
+                        <li>Automatic updates (always the latest version)</li>
+                        <li>24/7 support (someone else fixes problems)</li>
+                    </ul>
+                    <a href="contact.html" class="btn" style="padding:0.6rem 1.5rem;font-size:0.85rem;">Talk to Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-cool">
+        <div class="container about-content">
+            <h2>Why Go With Us?</h2>
+            <p>We're not a giant corporation. We're students who've spent way too much time learning about AWS, Azure, and GCP so you don't have to. We point you to the right tools, explain how things actually work, and help you figure out what fits your needs.</p>
+            <p>Whether you're building your first app, trying to understand what your company's DevOps team actually does, or just curious about how Netflix works — we've got something for you.</p>
+            <ul>
+                <li><strong>99.9% Uptime Guarantee</strong> — Well, that's what AWS promises, and we trust them</li>
+                <li><strong>We Actually Reply</strong> — No chatbots here. Email us and a real person writes back</li>
+                <li><strong>Pay-as-You-Grow</strong> — Start with free tiers, upgrade when you actually need to</li>
+                <li><strong>Free Guidance</strong> — We'll point you to the best free resources, no upsells</li>
+                <li><strong>No Bull</strong> — Real talk, real examples, no corporate jargon</li>
+            </ul>
+
+            <div style="text-align:center;margin-top:2rem;">
+                <a href="contact.html" class="btn">Ask Us Anything &#8594;</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>&#9729; CloudGuide</h4>
+                <p>A college student's attempt to make cloud computing make sense. Built with curiosity and a lot of late-night Googling.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>&#128205; SKIT Jaipur</p>
+                <p>&#128231; b250552@skit.ac.in</p>
+                <p>&#128222; 9079116553</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop">&#8593;</button>
+
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-results" id="searchResults">
+            <h3>Search Results <button class="close-search" id="closeSearch">&times;</button></h3>
+            <p class="no-results">Type something to search</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
