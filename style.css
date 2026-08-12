@@ -370,31 +370,32 @@ body {
     position: absolute;
     bottom: 0;
     left: 0; right: 0;
-    padding: 0.5rem;
+    padding: 0.3rem;
     background: linear-gradient(transparent, rgba(15, 23, 42, 0.75));
     color: white;
 }
 
 @media (max-width: 768px) {
     .slide-caption {
-        padding: 0.3rem;
+        padding: 0.2rem;
     }
 }
 
 @media (max-width: 480px) {
     .slide-caption {
-        padding: 0.2rem;
+        padding: 0.15rem;
     }
 }
 
 .slide-caption h3 {
-    font-size: 1rem;
-    margin-bottom: 0.1rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.05rem;
 }
 
 .slide-caption p {
-    font-size: 0.65rem;
-    opacity: 0.7;
+    font-size: 0.5rem;
+    opacity: 0.6;
+    margin: 0;
 }
 
 .slider-btn {
