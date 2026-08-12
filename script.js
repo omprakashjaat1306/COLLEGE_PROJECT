@@ -117,9 +117,10 @@ if (fadeElements.length && 'IntersectionObserver' in window) {
     var searchBtn = document.getElementById('searchBtn');
     var overlay = document.getElementById('searchOverlay');
     var resultsDiv = document.getElementById('searchResults');
+    var resultList = document.getElementById('searchResultList');
     var closeBtn = document.getElementById('closeSearch');
 
-    if (!searchInput || !searchBtn || !overlay || !resultsDiv) return;
+    if (!searchInput || !searchBtn || !overlay || !resultsDiv || !resultList) return;
 
     var pages = [
         { title: 'Home', url: 'index.html', desc: 'Cloud Computing overview and intro' },
@@ -131,25 +132,22 @@ if (fadeElements.length && 'IntersectionObserver' in window) {
 
     function performSearch(query) {
         var q = query.toLowerCase().trim();
-        if (!q) { resultsDiv.innerHTML = '<p class="no-results">Type something to search</p>'; return; }
+        if (!q) { resultList.innerHTML = '<p class="no-results">Type something to search</p>'; return; }
 
         var results = pages.filter(function (p) {
             return p.title.toLowerCase().includes(q) || p.desc.toLowerCase().includes(q);
         });
 
         if (!results.length) {
-            resultsDiv.innerHTML = '<p class="no-results">No results found for "' + query + '"</p>';
+            resultList.innerHTML = '<p class="no-results">No results found for "' + query + '"</p>';
             return;
         }
 
-        var html = '<h3>Search Results <button class="close-search" id="closeResults">&times;</button></h3>';
+        var html = '';
         results.forEach(function (r) {
             html += '<div class="search-result-item"><a href="' + r.url + '">' + r.title + '</a><span>' + r.desc + '</span></div>';
         });
-        resultsDiv.innerHTML = html;
-
-        var closeResults = document.getElementById('closeResults');
-        if (closeResults) closeResults.addEventListener('click', closeSearch);
+        resultList.innerHTML = html;
     }
 
     function openSearch() {
@@ -170,6 +168,9 @@ if (fadeElements.length && 'IntersectionObserver' in window) {
     if (closeBtn) closeBtn.addEventListener('click', closeSearch);
     overlay.addEventListener('click', function (e) {
         if (e.target === overlay) closeSearch();
+    });
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeSearch();
     });
 })();
 

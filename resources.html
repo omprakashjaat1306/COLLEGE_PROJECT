@@ -246,8 +246,13 @@
 
     <div class="search-overlay" id="searchOverlay">
         <div class="search-results" id="searchResults">
-            <h3>Search Results <button class="close-search" id="closeSearch">&times;</button></h3>
-            <p class="no-results">Type something to search</p>
+            <div class="search-header">
+                <h3>Search Results</h3>
+                <button class="close-search" id="closeSearch" aria-label="Close search">&times;</button>
+            </div>
+            <div class="search-result-list" id="searchResultList">
+                <p class="no-results">Type something to search</p>
+            </div>
         </div>
     </div>
 
